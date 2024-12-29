@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Order Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Customer Order Management Dashboard</h1>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#incoming">Incoming Orders</a></li>
+            <li><a href="#pending">Pending Deliveries</a></li>
+            <li><a href="#completed">Completed Orders</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="incoming">
+            <h2>Incoming Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="incoming-orders">
+                    <!-- Incoming orders dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="pending">
+            <h2>Pending Deliveries</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Delivery Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="pending-orders">
+                    <!-- Pending orders dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="completed">
+            <h2>Completed Orders</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer Name</th>
+                        <th>Completion Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="completed-orders">
+                    <!-- Completed orders dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <div id="report-charts">
+                <!-- Reports dynamically rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Customer Order Management System</p>
+    </footer>
+</body>
+</html>
